@@ -1,6 +1,6 @@
-output "text_file" {
-  value = file("${path.module}/foo.txt")
-}
+#output "text_file" {
+#  value = file("${path.module}/foo.txt")
+#}
 
 output "result" {
   value = local.result
