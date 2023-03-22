@@ -1,7 +1,15 @@
-#output "instance_ami" {
-#  value = aws_instance.web.ami
-#}
+output "text_file" {
+  value = file("${path.module}/foo.txt")
+}
 
-#output "instance_arn" {
-#  value = aws_instance.web.arn
-#}
+output "result" {
+  value = local.result
+}
+
+output "tags" {
+  value = local.tags
+}
+
+output "random_pet_name" {
+  value = random_pet.main.id
+}
