@@ -1,4 +1,11 @@
-#variable "instance_type" {
-#  description = "Type of EC2 instance to provision"
-#  default     = "t3.nano"
-#}
+variable "project_name" {
+  type        = string
+  default     = "my-project"
+  description = "Name of the project."
+}
+
+variable "environment" {
+  type        = string
+  default     = "dev"
+  description = "Name of the environment."
+}
